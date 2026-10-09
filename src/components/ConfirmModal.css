@@ -1,0 +1,83 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.modal-dialog {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  width: 100%;
+  max-width: 440px;
+  overflow: hidden;
+  padding: 1.5rem;
+  border: 1px solid var(--neutral-200);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.modal-icon-badge {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-icon-badge.danger {
+  background-color: #fef2f2;
+  color: var(--danger-500);
+}
+
+.modal-icon-badge.info {
+  background-color: var(--primary-50);
+  color: var(--primary-600);
+}
+
+.modal-close-btn {
+  color: var(--neutral-400);
+
+  &:hover {
+    color: var(--neutral-800);
+  }
+}
+
+.modal-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--neutral-900);
+  margin-bottom: 0.5rem;
+}
+
+.modal-message {
+  font-size: 0.925rem;
+  color: var(--neutral-600);
+  line-height: 1.5;
+
+  ul {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+    line-height: 1.6;
+  }
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}

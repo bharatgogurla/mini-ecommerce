@@ -1,0 +1,68 @@
+.quantity-selector {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-surface);
+  overflow: hidden;
+  user-select: none;
+}
+
+.quantity-selector.small {
+  height: 32px;
+}
+
+.quantity-selector.medium {
+  height: 40px;
+}
+
+.quantity-selector.large {
+  height: 48px;
+}
+
+.qty-btn {
+  height: 100%;
+  padding: 0 0.625rem;
+  background-color: transparent;
+  color: var(--neutral-700);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.qty-btn:hover:not(:disabled) {
+  background-color: var(--neutral-100);
+  color: var(--primary-600);
+}
+
+.qty-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.qty-value {
+  padding: 0 0.75rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--neutral-900);
+  min-width: 2.25rem;
+  text-align: center;
+}
+
+.qty-input {
+  width: 2.75rem;
+  height: 100%;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--neutral-900);
+  background: transparent;
+}
+
+.qty-input::-webkit-inner-spin-button,
+.qty-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.qty-input[type=number] {
+  -moz-appearance: textfield;
+}
